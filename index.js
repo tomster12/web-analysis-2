@@ -644,7 +644,7 @@ var Panel;
         }
     }
     Panel_1.Panel = Panel;
-    /** Visual and representation of a connection between two panels. */
+    /** Visual and logical representation of a connection between two panels. */
     class PanelConnection {
         element;
         isConnected;
@@ -858,7 +858,7 @@ var Panel;
         }
     }
     Panel_1.PanelConnection = PanelConnection;
-    /** Panel content, takes user input. */
+    /** Panel content: takes user input. */
     class UserInputContent extends Util.ElementProxy {
         panel;
         elementMessagesContainer;
@@ -980,7 +980,7 @@ var Panel;
         }
     }
     Panel_1.UserInputContent = UserInputContent;
-    /** Panel content, previews messages. */
+    /** Panel content: previews messages. */
     class PreviewPanelContent extends Util.ElementProxy {
         panel;
         messagesScrollable;
@@ -1045,7 +1045,7 @@ var Panel;
         }
     }
     Panel_1.PreviewPanelContent = PreviewPanelContent;
-    /** Panel content, splits messages into lines. */
+    /** Panel content: splits messages into lines. */
     class SplitPanelContent extends Util.ElementProxy {
         elementCount;
         panel;
@@ -1105,7 +1105,7 @@ var Panel;
         }
     }
     Panel_1.SplitPanelContent = SplitPanelContent;
-    /** Panel content, processes message */
+    /** Panel content: processes message */
     class ProcessPanelContent extends Util.ElementProxy {
         panel;
         checkboxLowercase;
@@ -1203,7 +1203,7 @@ var Panel;
         }
     }
     Panel_1.ProcessPanelContent = ProcessPanelContent;
-    /** Handles creating new panels by dragging from the background. */
+    /** User input for creating new panels by dragging from the background. */
     class PanelCreator extends Util.ElementProxy {
         isVisible;
         clickListener;

@@ -730,7 +730,7 @@ namespace Panel {
         }
     }
 
-    /** Visual and representation of a connection between two panels. */
+    /** Visual and logical representation of a connection between two panels. */
     export class PanelConnection {
         element: SVGPathElement;
         isConnected: boolean;
@@ -954,7 +954,7 @@ namespace Panel {
         }
     }
 
-    /** Panel content, takes user input. */
+    /** Panel content: takes user input. */
     export class UserInputContent extends Util.ElementProxy implements IPanelContent {
         panel: Panel;
         elementMessagesContainer: HTMLElement;
@@ -1094,7 +1094,7 @@ namespace Panel {
         }
     }
 
-    /** Panel content, previews messages. */
+    /** Panel content: previews messages. */
     export class PreviewPanelContent extends Util.ElementProxy implements IPanelContent {
         panel: Panel;
         messagesScrollable: Util.ScrollableWrapper;
@@ -1167,7 +1167,7 @@ namespace Panel {
         }
     }
 
-    /** Panel content, splits messages into lines. */
+    /** Panel content: splits messages into lines. */
     export class SplitPanelContent extends Util.ElementProxy implements IPanelContent {
         elementCount: HTMLElement;
         panel: Panel;
@@ -1234,7 +1234,7 @@ namespace Panel {
         }
     }
 
-    /** Panel content, processes message */
+    /** Panel content: processes message */
     export class ProcessPanelContent extends Util.ElementProxy implements IPanelContent {
         panel: Panel;
         checkboxLowercase: Util.Checkbox;
@@ -1341,7 +1341,7 @@ namespace Panel {
         }
     }
 
-    /** Handles creating new panels by dragging from the background. */
+    /** User input for creating new panels by dragging from the background. */
     export class PanelCreator extends Util.ElementProxy {
         isVisible: boolean;
         clickListener: () => void;
