@@ -1,8 +1,5 @@
 # Analysis Sandbox
 
-https://tomster12.github.io/analysis-sandbox/
+Small site built to test a more sandbox approach to analysing the Noita eye messages.
 
-## To-Do
-
-- Same letter highlighting on messages
-- Standardize message view for use in multiple panels with highlighting
+- https://noita.wiki.gg/wiki/Eye_Messages
